@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<script src="https://kit.fontawesome.com/6338df07fc.js" crossorigin="anonymous"></script>
+        <title>Reservia - Trouvez votre hébergement pour des vacances de rêve</title>
+    </head>
+
+    <body>
+		<div id="blockpage">
+			<header id="topsection">
+    			<img src="images/logo/Reservia.svg" class="logo" alt="logo" />
+    			<nav>
+    				<ul>
+    					<li><a href="#ancrehebergements" class="navhebergements">Hébergements</a></li>
+    					<li><a href="#ancreactivites">Activités</a></li>
+    					<li><a href="#" class="navsinscrire">S'inscrire</a></li>
+    				</ul>
+    			</nav>
+    		</header>
+		
+			<!-- filter section -->
+    		<section id="filtersection">
+    			<h1>Trouvez botre hébergement pour des vacances de rêve</h1>
+    			<p>En plein centre ville ou en pleine nature</p>
+				<form method="post" action="traitement.php">
+    				<p>
+    					<label for="location"><i class="fas fa-map-marker-alt"></i></label>
+    					<input type="search" name="location" id="location" placeholder="Marseille, France" />
+						<input type="submit" value="Rechercer" />
+    				</p>
+    			</form>
+
+    			<ul id="filtres">
+    				<h2>Filtres</h2>
+					<div id="btncontainer">
+					  <button class="btn" onclick="filtereconomique"><i class="fas fa-money-bill-wave"></i>Économique</button>
+					  <button class="btn" onclick="filterfamilial"><i class="fas fa-child"></i>Familial</button>
+					  <button class="btn" onclick="filterromantique"><i class="fas fa-heart"></i>Romantique</button>
+					  <button class="btn" onclick="filteranimaux"><i class="fas fa-dog"></i>Animaux authorisés</button>
+					</div>
+				</ul>
+			</section>
+
+    		<div id="container">
+				<section id="sectionhebergements">
+    				<!-- section hébergements -->
+					<p><i class="far fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            		<h1 id="ancrehebergements">Hébergements à Marseille</h1>
+					<div class="card">
+						<img class="imgcard" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aubergelacannebiere" />
+						<div class="box">
+					  	<h4><b>Auberge La Cannebière</b></h4> 
+					  	<p>Nuit à partir de 25€</p> 
+						</div>
+					</div>
+				
+				</section>
+    	
+				<section id="sectionpopulaires">
+    				<h1>Les plus populaires</h1>
+					<i class="fas fa-chart-line"></i>
+				</section>
+			</div>
+
+    		<section>
+
+            	<!-- section activités -->
+    			<h1 id="ancreactivites">Activités à Marseille</h1>
+    		</section>
+
+    		<footer>
+    			<div>
+    				<h2>A propos</h2>
+    				<ul>
+    					<li><a href="#">Fonctionnement du site</a></li>
+    					<li><a href="#">Conditions générales de vente</a></li>
+    					<li><a href="#">Données et confidentialité</a></li>
+    				</ul>
+    			</div>
+
+    			<div>
+    				<h2>Nos hébergements</h2>
+    					<ul>
+    						<li><a href="#">Charte qualité</a></li>
+    						<li><a href="#">Soumettre votre hôtel</a></li>
+    					</ul>
+    			</div>
+    		
+    			<div>
+    				<h2>Assistance</h2>
+    					<ul>
+    						<li><a href="#">Centre d'aide</a></li>
+    						<li><a href="#">Nous contacter</a></li>
+    					</ul>
+    			</div>
+    		</footer>
+		</div>	
+    </body>
+</html>

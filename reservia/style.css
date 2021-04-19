@@ -1,0 +1,151 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+#blockpage{
+    width: 1000px;
+    margin: auto;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+p ul {
+  font-size: 12px;
+}
+
+#topsection {
+  display: flex;
+  margin: 15px;
+}
+
+header {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+    margin-left: 35px;
+}
+
+nav a
+{
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navhebergements {
+    color: #0065FC;
+}
+
+.navsinscrire {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+
+/* filter section */
+
+#filtersection {
+  margin: 15px;
+}
+
+#filtres {
+  display: flex;
+}
+
+.btn {
+  padding: 12px 16px;
+  outline:  #F2F2F2;
+  background-color: white;
+}
+
+.btn :hover {
+  color: #0065FC;
+  font-weight: bold;
+}
+
+#filtersection {
+  margin-top: 20px;
+  height: 150px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* div container */
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sectionhebergements {
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  width: 60%;
+  margin: 15px;
+  padding: 20px 30px;
+}
+
+#sectionpopulaires {
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  width: 40%;
+  margin: 15px;
+  padding: 20px 30px;
+}
+
+.box {
+  float: left;
+  width: 200px;
+  height: 80px;
+  margin:1em;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 #F2F2F2;
+  transition: 0.1s;
+  border-radius: 5px;
+}
+
+.imgcard {
+  border-radius: 5px 5px 0 0;
+}
+
+/* footer */
+footer {
+  display: flex;
+  background-color: #F2F2F2;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 200px;
+  justify-content: space-between;
+}
+
+footer ul {
+  padding-left: 2px;
+  padding-top: 5px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
