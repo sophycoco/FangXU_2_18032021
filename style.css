@@ -3,16 +3,22 @@ body {
 }
 
 #blockpage{
-    width: 100%;
+    max-width: 1600px;
     margin: auto;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 17px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 13px;
 }
 
 p, ul {
@@ -37,7 +43,7 @@ nav ul {
 
 nav li
 {
-    margin-right: 15px;
+    margin-right: 20px;
     margin-left: 35px;
 }
 
@@ -48,9 +54,7 @@ nav a {
 
 nav a:hover {
   color: #0065FC;
-  /* 
-  border-bottom: bold #0065FC;
-  */
+  border-top: bold #0065FC;
   padding-top: 40px;
 }
 
@@ -77,8 +81,6 @@ ul {
 
 #filtersection label {
   background-color: #F2F2F2;
-  /* ??? height: 40px;
-  width: 40px; */
   border-radius: 12px 0 0 12px;
 }
 
@@ -87,6 +89,8 @@ ul {
   border-radius: 12px 0 0 12px;
   width: 35px;
   height: 40px;
+  text-align: center;
+  /* align-items: center; */
 }
 
 .searchlocation {
@@ -111,6 +115,15 @@ ul {
 
 #filters {
   display: flex;
+  width: 800px;
+  margin-top: 40px;
+  margin-left: -40px;
+}
+
+#btncontainer {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 8px;
 }
 
 #btncontainer :hover {
@@ -118,19 +131,13 @@ ul {
   font-weight: bold;
 }
 
-#btncontainer {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 15px;
-}
-
 .btn {
   height: 35px;
   border-radius: 20px;
   background-color: white;
   outline:  #F2F2F2;
-  box-shadow: none;
   display: flex;
+  margin-right: 25px;
 }
 
 .btn i {
@@ -139,6 +146,7 @@ ul {
   height: 35px;
   color: #0065FC;
   border-radius: 20px;
+  text-align: center;
 }
 
 .btn p {
@@ -163,10 +171,12 @@ ul {
 #container {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 #info {
   display: flex;
+  margin-left: 15px;
 }
 
 #info i {
@@ -195,17 +205,18 @@ ul {
 
 #upperheberge {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 16px;
 }
 
 #downheberge {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .hotelcard {
-  width: 210px;
-  height: 160px;
+  width: 260px;
+  height: 190px;
   border: 4px solid white;
   background-color: white;
   border-radius: 18px;
@@ -214,8 +225,8 @@ ul {
 }
 
 .imgcard_h {
-  width: 210px;
-  height: 100px;
+  width: 260px;
+  height: 110px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
 }
@@ -246,14 +257,26 @@ ul {
   padding: 20px 30px;
 }
 
+#sectionhebergements h2 {
+  margin-left: 18px;
+}
+
 #sectionhebergements h3 {
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 50px;
+  /* font-size: 14px;
+  font-weight: bold; 
+  margin-left: 13px; */
+  margin-top: 8px;
+}
+
+#sectionhebergements p {
+  margin-top: -8px;
+  margin-left: 13px;
 }
 
 .stars {
   display: flex;
+  margin-top: -8px;
+  margin-left: 13px;
 }
 
 .bluestar {
@@ -268,9 +291,36 @@ ul {
 #sectionpopulaires {
   background-color: #F2F2F2;
   border-radius: 18px;
-  width: 35%;
+  width: 30%;
   margin: 15px;
   padding: 20px 30px;
+}
+
+#sectionpopulaires i {
+  margin-top: 18px;
+  margin-right: 20px;
+}
+
+#sectionpopulaires h2 {
+  margin-left: 18px;
+}
+
+#cardspopulaires {
+  margin-left: 30px;
+  margin-top: 18px;
+  /* justify-content: center??? */
+}
+
+#cardspopulaires h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-left: 13px;
+}
+
+#sectionpopulaires p {
+  margin-top: -8px;
+  margin-left: 13px;
 }
 
 #title {
@@ -287,52 +337,109 @@ ul {
 .cards {
   display: flex;
   width: auto;
-  height: 450px;
   justify-content: space-between;
   margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 55px;
 }
 
 .activite_s {
-  width: 280px;
-  height: 400px;
+  width: 330px;
+  height: 440px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px#aeacaf;
+}
+.imgcard_as {
+  width: 330px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+}
+.activite_d {
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pomegues {
+  width: 330px;
+  height: 220px;
   border-radius: 18px;
   box-shadow: 0px 0px 10px#aeacaf;
 }
 
-.imgcard_as {
-  width: 280px;
-  height: 350px;
+#img_pomegues {
+  width: 330px;
+  height: 170px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
+  object-position: 0 -150px;
 }
 
-.activitecard_d {
-  width: 280px;
+#frioul {
+  width: 330px;
   height: 180px;
   border-radius: 18px;
   box-shadow: 0px 0px 10px#aeacaf;
 }
 
-.imgcard_ad {
-  width: 280px;
+#img_frioul {
+  width: 330px;
   height: 130px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
+  object-position: 0 -12px;
+}
+
+#notredame {
+  width: 330px;
+  height: 180px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px#aeacaf;
+}
+
+#img_notredame {
+  width: 330px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  object-position: 0 -12px;
+}
+
+#longchamp {
+  width: 330px;
+  height: 220px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px#aeacaf;
+}
+
+#img_longchamp {
+  width: 330px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  object-position: 0 -8px;
 }
 
 /* footer */
 footer {
   display: flex;
+  height: 170px;
   background-color: #F2F2F2;
   padding-top: 25px;
   padding-left: 25px;
-  padding-right: 200px;
+  padding-right: 500px;
   justify-content: space-between;
 }
 
 footer ul {
   padding-left: 2px;
   padding-top: 5px;
+}
+
+footer li {
+  margin-bottom: 15px;
 }
 
 footer a {
