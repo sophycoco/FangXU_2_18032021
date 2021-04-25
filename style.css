@@ -155,7 +155,6 @@ ul {
 
 #btncontainer :hover {
   color: #0065FC;
-  font-weight: bold;
 }
 
 .btn {
@@ -169,11 +168,12 @@ ul {
 
 .btn i {
   background-color: #DEEBFF;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 28px;
   color: #0065FC;
   border-radius: 20px;
   text-align: center;
+  padding-top: 12px;
 }
 
 .btn p {
@@ -181,8 +181,8 @@ ul {
   height: 35x;
   width: max-content;
   border-radius: 20px;
-  padding: 5px 15px 5px 35px;
-  margin-left: -35px;
+  margin-left: -40px;
+  padding: 10px 15px 10px 50px;
   align-self: center;
   font-weight: bold;
 }
@@ -233,17 +233,20 @@ ul {
 #upperheberge {
   display: flex;
   justify-content: space-around;
+  position: relative;
   margin-top: 16px;
 }
 
 #downheberge {
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 
 .hotelcard {
   width: 260px;
   height: 190px;
+  position: relative;
   border: 4px solid white;
   background-color: white;
   border-radius: 18px;
@@ -261,6 +264,7 @@ ul {
 .hotelcard_p {
   width: 360px;
   height: 130px;
+  position: relative;
   border: 4px solid white;
   background-color: white;
   border-radius: 18px;
@@ -321,6 +325,7 @@ ul {
   width: 30%;
   margin: 15px;
   padding: 20px 30px;
+  position: relative;
 }
 
 #sectionpopulaires i {
@@ -335,7 +340,7 @@ ul {
 #cardspopulaires {
   margin-left: 30px;
   margin-top: 18px;
-  /* justify-content: center??? */
+  /*align-items: center; ??? */
 }
 
 #cardspopulaires h3 {
@@ -364,6 +369,7 @@ ul {
 .cards {
   display: flex;
   width: auto;
+  position: relative;
   justify-content: space-between;
   margin-right: 30px;
   margin-top: 30px;
