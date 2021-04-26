@@ -293,10 +293,8 @@ ul {
 }
 
 #sectionhebergements h3 {
-  /* font-size: 14px;
-  font-weight: bold; 
-  margin-left: 13px; */
   margin-top: 8px;
+  /* text-decoration: none; ???*/ 
 }
 
 #sectionhebergements p {
@@ -322,9 +320,9 @@ ul {
 #sectionpopulaires {
   background-color: #F2F2F2;
   border-radius: 18px;
-  width: 30%;
-  margin: 15px;
-  padding: 20px 30px;
+  width: 450px;
+  margin: auto;
+  padding: 12px 30px;
   position: relative;
 }
 
