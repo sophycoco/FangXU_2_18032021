@@ -1,10 +1,22 @@
-body {
-  font-family: 'Raleway', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#blockpage{
-    max-width: 1600px;
-    margin: auto;
+a, a:visited {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#blockpage {
+  max-width: 1600px;
+  margin: auto;
 }
 
 h1 {
@@ -21,7 +33,8 @@ h3 {
   margin-left: 13px;
 }
 
-p, ul {
+p,
+ul {
   font-size: 14px;
 }
 
@@ -39,26 +52,25 @@ header {
 /* Navigation */
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 120px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  
 }
 
-nav li{
-  margin-top: -40px;  
+nav li {
   margin-right: 50px;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-nav a:hover {
-  color: #0065FC;
-  border-top: bold #0065FC;
-  padding-top: 40px;
+nav li:hover {
+  color: #0065fc;
+  border-top: 1px solid #0065fc;
+  padding-top: 20px;
 }
 
 ul {
@@ -69,14 +81,13 @@ ul {
   display: flex;
 }
 .navsinscrire {
-    font-weight: bold;
-    color: #0065FC;
-    text-decoration: none;
-    margin-top: 19px;
-    margin-left: 24px;
-    margin-right: 25px;
+  font-weight: bold;
+  color: #0065fc;
+  text-decoration: none;
+  margin-top: 19px;
+  margin-left: 24px;
+  margin-right: 25px;
 }
-
 
 /* filter section */
 
@@ -90,12 +101,12 @@ ul {
 }
 
 #filtersection label {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 12px 0 0 12px;
 }
 
 .locationicon {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 12px 0 0 12px;
   width: 35px;
   height: 30px;
@@ -110,7 +121,7 @@ ul {
 #location {
   height: 40px;
   width: 160px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
 }
 
 /*
@@ -125,9 +136,9 @@ ul {
 } */
 
 .searchbtn {
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-size: 14px;
-  background-color: #0065FC;
+  background-color: #0065fc;
   height: 40px;
   width: 110px;
   border-radius: 0 12px 12px 0;
@@ -135,7 +146,7 @@ ul {
 }
 
 .searchbtn i {
-  color: #0065FC;
+  color: #0065fc;
   width: 0;
   z-index: -2;
 }
@@ -154,30 +165,30 @@ ul {
 }
 
 #btncontainer :hover {
-  color: #0065FC;
+  color: #0065fc;
 }
 
 .btn {
   height: 35px;
   border-radius: 20px;
   background-color: white;
-  outline:  #F2F2F2;
+  outline: #f2f2f2;
   display: flex;
   margin-right: 25px;
 }
 
 .btn i {
-  background-color: #DEEBFF;
+  background-color: #deebff;
   width: 40px;
   height: 28px;
-  color: #0065FC;
+  color: #0065fc;
   border-radius: 20px;
   text-align: center;
   padding-top: 12px;
 }
 
 .btn p {
-  border: 2px solid  #F2F2F2;
+  border: 2px solid #f2f2f2;
   height: 35x;
   width: max-content;
   border-radius: 20px;
@@ -207,8 +218,8 @@ ul {
 }
 
 #info i {
-  color: #0065FC;
-  border: 2px solid #F2F2F2;
+  color: #0065fc;
+  border: 2px solid #f2f2f2;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -281,7 +292,7 @@ ul {
 }
 
 #sectionhebergements {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 18px;
   width: 65%;
   margin: 15px;
@@ -294,7 +305,7 @@ ul {
 
 #sectionhebergements h3 {
   margin-top: 8px;
-  /* text-decoration: none; ???*/ 
+  /* text-decoration: none; ???*/
 }
 
 #sectionhebergements p {
@@ -309,16 +320,16 @@ ul {
 }
 
 .bluestar {
-  color: #0065FC;
+  color: #0065fc;
 }
 
 .greystar {
-  color: #F2F2F2;
+  color: #f2f2f2;
   margin-left: 5px;
 }
 
 #sectionpopulaires {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 18px;
   width: 450px;
   margin: auto;
@@ -457,7 +468,7 @@ ul {
 footer {
   display: flex;
   height: 170px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding-top: 25px;
   padding-left: 25px;
   padding-right: 500px;
@@ -476,4 +487,9 @@ footer li {
 footer a {
   color: black;
   text-decoration: none;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+
 }
