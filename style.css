@@ -20,7 +20,8 @@ body {
 }
 
 h1 {
-  font-size: 19px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -28,76 +29,70 @@ h2 {
 }
 
 h3 {
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 15px;
   margin-left: 13px;
 }
 
-p,
-ul {
-  font-size: 14px;
-}
-
-#header {
-  display: flex;
-  margin: 15px;
-  justify-content: space-between;
+p,ul {
+  font-size: 15px;
 }
 
 header {
-  justify-content: space-between;
-  align-items: flex-end;
+  display: flex;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+
+#logo {
+  margin-left: 15px;
 }
 
 /* Navigation */
-
-nav ul {
+nav {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  
+  flex-grow: 1;
+  margin-right: 20px;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
 }
 
 nav li {
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
-nav a {
+nav li {
   text-decoration: none;
-  color: black;
+  color: inherit
 }
 
 nav li:hover {
   color: #0065fc;
-  border-top: 1px solid #0065fc;
-  padding-top: 20px;
+  border-top: 2px solid #0065fc;
 }
 
 ul {
   list-style-type: none;
 }
 
-#navsection {
-  display: flex;
-}
-.navsinscrire {
-  font-weight: bold;
+#navsinscrire {
+  font-weight: bolder;
   color: #0065fc;
-  text-decoration: none;
-  margin-top: 19px;
-  margin-left: 24px;
-  margin-right: 25px;
 }
 
 /* filter section */
-
 #filtersection {
   margin: 15px;
 }
 
 #filtersection p {
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #filtersection label {
@@ -124,17 +119,6 @@ ul {
   border: 1px solid #f2f2f2;
 }
 
-/*
-#research {
-  color: #F2F2F2;
-  font-size: 14px;
-  background-color: #0065FC;
-  height: 40px;
-  width: 110px;
-  border-radius: 0 12px 12px 0;
-  margin-left: -5px;
-} */
-
 .searchbtn {
   color: #f2f2f2;
   font-size: 14px;
@@ -154,14 +138,20 @@ ul {
 #filters {
   display: flex;
   width: 800px;
-  margin-top: 40px;
-  margin-left: -40px;
+  margin-top: 35px;
+}
+
+#filters h2 {
+  margin-top: 8px;
+}
+
+#filtersection p {
+  margin-top: 24px;
 }
 
 #btncontainer {
   display: flex;
-  margin-left: 25px;
-  margin-top: 8px;
+  margin-left: 30px;
 }
 
 #btncontainer :hover {
@@ -174,7 +164,7 @@ ul {
   background-color: white;
   outline: #f2f2f2;
   display: flex;
-  margin-right: 25px;
+  margin-right: 30px;
 }
 
 .btn i {
@@ -188,8 +178,7 @@ ul {
 }
 
 .btn p {
-  border: 2px solid #f2f2f2;
-  height: 35x;
+  border: 2.5px solid #f2f2f2;
   width: max-content;
   border-radius: 20px;
   margin-left: -40px;
@@ -202,14 +191,14 @@ ul {
   margin-top: 20px;
   height: 150px;
   position: relative;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* div container */
 #container {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 #info {
@@ -220,14 +209,21 @@ ul {
 #info i {
   color: #0065fc;
   border: 2px solid #f2f2f2;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 4px 2px 0 2px;
   border-radius: 50%;
 }
 
 #info p {
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 5px;
+}
+
+#hebergements h2 {
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 #hebergements {
@@ -237,10 +233,11 @@ ul {
 
 .hebergements {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
+/*
 #upperheberge {
   display: flex;
   justify-content: space-around;
@@ -253,6 +250,7 @@ ul {
   justify-content: space-around;
   position: relative;
 }
+*/
 
 .hotelcard {
   width: 260px;
@@ -296,7 +294,7 @@ ul {
   border-radius: 18px;
   width: 65%;
   margin: 15px;
-  padding: 20px 30px;
+  padding: 40px 20px;
 }
 
 #sectionhebergements h2 {
@@ -304,20 +302,26 @@ ul {
 }
 
 #sectionhebergements h3 {
-  margin-top: 8px;
-  /* text-decoration: none; ???*/
+  margin-top: 12px;
 }
 
 #sectionhebergements p {
-  margin-top: -8px;
+  margin-top: 5px;
   margin-left: 13px;
 }
 
 .stars {
   display: flex;
-  margin-top: -8px;
+  margin-top: 1px;
   margin-left: 13px;
 }
+
+
+.stars_p {
+  padding-top: 25px;
+  display: flex;
+  margin-left: 13px;
+} 
 
 .bluestar {
   color: #0065fc;
@@ -332,14 +336,14 @@ ul {
   background-color: #f2f2f2;
   border-radius: 18px;
   width: 450px;
-  margin: auto;
-  padding: 12px 30px;
+  padding: 40px 20px;
   position: relative;
+  margin: 15px;
 }
 
-#sectionpopulaires i {
-  margin-top: 18px;
-  margin-right: 20px;
+#title i {
+  margin-top: 10px;
+  margin-right: 25px;
 }
 
 #sectionpopulaires h2 {
@@ -348,19 +352,18 @@ ul {
 
 #cardspopulaires {
   margin-left: 30px;
-  margin-top: 18px;
-  /*align-items: center; ??? */
+  margin-top: 20px;
+  justify-content: center;
 }
 
 #cardspopulaires h3 {
-  font-size: 14px;
   font-weight: bold;
   margin-top: 12px;
   margin-left: 13px;
 }
 
 #sectionpopulaires p {
-  margin-top: -8px;
+  margin-top: 8px;
   margin-left: 13px;
 }
 
@@ -373,10 +376,16 @@ ul {
 #activites {
   width: 100%;
   margin: 15px;
+  padding-top: 20px;
+}
+
+#activites h3 {
+  margin-top: 10px;
 }
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   width: auto;
   position: relative;
   justify-content: space-between;
@@ -385,7 +394,7 @@ ul {
   margin-bottom: 55px;
 }
 
-.activite_s {
+.activitecard_s {
   width: 330px;
   height: 440px;
   border-radius: 18px;
@@ -397,6 +406,7 @@ ul {
   object-fit: cover;
   border-radius: 18px 18px 0 0;
 }
+
 .activite_d {
   height: 440px;
   display: flex;
@@ -476,8 +486,7 @@ footer {
 }
 
 footer ul {
-  padding-left: 2px;
-  padding-top: 5px;
+  padding-top: 20px;
 }
 
 footer li {
@@ -485,11 +494,18 @@ footer li {
 }
 
 footer a {
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
 
 /* mobile */
 @media screen and (max-width: 768px) {
+
+
+  
+#btncontainer {
+  width: 400px;
+  flex-wrap: wrap;
+}  
 
 }
