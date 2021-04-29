@@ -3,12 +3,12 @@
   padding: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   list-style: none;
   color: inherit;
 }
-
 
 body {
   font-family: "Raleway", sans-serif;
@@ -33,13 +33,13 @@ h3 {
   margin-left: 13px;
 }
 
-p,ul {
+p,
+ul {
   font-size: 15px;
 }
 
 header {
   display: flex;
-  padding-top: 30px;
   flex-wrap: wrap;
 }
 
@@ -63,12 +63,11 @@ nav ul {
 }
 
 nav li {
-  margin-right: 60px;
-}
-
-nav li {
   text-decoration: none;
-  color: inherit
+  color: inherit;
+  padding-top: 50px;
+  border-top: 2px solid transparent;
+  margin-right: 60px;
 }
 
 nav li:hover {
@@ -137,7 +136,6 @@ ul {
 
 #filters {
   display: flex;
-  width: 800px;
   margin-top: 35px;
 }
 
@@ -218,15 +216,15 @@ ul {
 
 #info p {
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
-#hebergements h2 {
+#heberge_pop h2 {
   margin-top: 5px;
   margin-bottom: 15px;
 }
 
-#hebergements {
+#heberge_pop {
   display: flex;
   justify-content: space-between;
 }
@@ -235,25 +233,11 @@ ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
-
-/*
-#upperheberge {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  margin-top: 16px;
-}
-
-#downheberge {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-}
-*/
 
 .hotelcard {
-  width: 260px;
+  width: 28%;
   height: 190px;
   position: relative;
   border: 4px solid white;
@@ -264,14 +248,15 @@ ul {
 }
 
 .imgcard_h {
-  width: 260px;
+  width: 100%;
   height: 110px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
 }
 
 .hotelcard_p {
-  width: 360px;
+  width: 85%;
+  margin: auto;
   height: 130px;
   position: relative;
   border: 4px solid white;
@@ -283,8 +268,7 @@ ul {
 }
 
 .imgcard_p {
-  width: 120px;
-  height: 130px;
+  width: 40%;
   object-fit: cover;
   border-radius: 18px 0 0 18px;
 }
@@ -294,7 +278,7 @@ ul {
   border-radius: 18px;
   width: 65%;
   margin: 15px;
-  padding: 40px 20px;
+  padding: 40px 20px 25px 20px;
 }
 
 #sectionhebergements h2 {
@@ -306,7 +290,7 @@ ul {
 }
 
 #sectionhebergements p {
-  margin-top: 5px;
+  margin-top: 4px;
   margin-left: 13px;
 }
 
@@ -316,12 +300,11 @@ ul {
   margin-left: 13px;
 }
 
-
 .stars_p {
   padding-top: 25px;
   display: flex;
   margin-left: 13px;
-} 
+}
 
 .bluestar {
   color: #0065fc;
@@ -335,8 +318,8 @@ ul {
 #sectionpopulaires {
   background-color: #f2f2f2;
   border-radius: 18px;
-  width: 450px;
-  padding: 40px 20px;
+  width: 35%;
+  padding: 40px 20px 25px 20px;
   position: relative;
   margin: 15px;
 }
@@ -351,8 +334,7 @@ ul {
 }
 
 #cardspopulaires {
-  margin-left: 30px;
-  margin-top: 20px;
+  padding-top: 20px;
   justify-content: center;
 }
 
@@ -395,13 +377,13 @@ ul {
 }
 
 .activitecard_s {
-  width: 330px;
+  width: 20%;
   height: 440px;
   border-radius: 18px;
   box-shadow: 0px 0px 10px#aeacaf;
 }
 .imgcard_as {
-  width: 330px;
+  width: 100%;
   height: 390px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
@@ -409,20 +391,21 @@ ul {
 
 .activite_d {
   height: 440px;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 #pomegues {
-  width: 330px;
+  width: 100%;
   height: 220px;
   border-radius: 18px;
   box-shadow: 0px 0px 10px#aeacaf;
 }
 
 #img_pomegues {
-  width: 330px;
+  width: 100%;
   height: 170px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
@@ -430,14 +413,14 @@ ul {
 }
 
 #frioul {
-  width: 330px;
+  width: 100%;
   height: 180px;
   border-radius: 18px;
   box-shadow: 0px 0px 10px#aeacaf;
 }
 
 #img_frioul {
-  width: 330px;
+  width: 100%;
   height: 130px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
@@ -445,14 +428,14 @@ ul {
 }
 
 #notredame {
-  width: 330px;
+  width: 100%;
   height: 180px;
   border-radius: 18px;
   box-shadow: 0px 0px 10px#aeacaf;
 }
 
 #img_notredame {
-  width: 330px;
+  width: 100%;
   height: 130px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
@@ -460,14 +443,14 @@ ul {
 }
 
 #longchamp {
-  width: 330px;
+  width: 100%;
   height: 220px;
   border-radius: 18px;
   box-shadow: 0px 0px 10px#aeacaf;
 }
 
 #img_longchamp {
-  width: 330px;
+  width: 100%;
   height: 170px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
@@ -500,12 +483,183 @@ footer a {
 
 /* mobile */
 @media screen and (max-width: 768px) {
+  #logo {
+    padding-top: 20px;
+  }
 
+  nav {
+    flex-direction: column;
+    margin-top: -25px;
+  }
 
+  nav li {
+    margin-right: 80px;
+    padding-bottom: 20px;
+    border-bottom: 2 solid #f2f2f2;
+  }
+
+  nav li:hover {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    border-top: unset;
+  }
+
+  #navsinscrire {
+    order: -1;
+  }
+
+  .searchbtn {
+    color: #f2f2f2;
+    font-size: 14px;
+    background-color: #0065fc;
+    height: 40px;
+    width: 45px;
+    border-radius: 12px;
+    margin-left: -4px;
+  }
+
+  .searchbtn i {
+    color: white;
+    width: 45px;
+    margin-top: 13px;
+    margin-bottom: 8px;
+  }
+
+  .searchbtn span {
+    color: white;
+  }
+
+  #filters {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-bottom: 15px;
+  }
+
+  #btncontainer {
+    width: 110%;
+    flex-wrap: wrap;
+    margin-left: unset;
+    margin-top: 20px;
+  }
+
+  #container {
+    padding-top: 175px;
+  }
+
+  #heberge_pop {
+    flex-direction: column-reverse;
+  }
+
+  #sectionpopulaires {
+    width: 100%;
+    border-radius: unset;
+    padding: unset;
+    margin: unset;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
   
-#btncontainer {
-  width: 400px;
-  flex-wrap: wrap;
-}  
+  #sectionhebergements {
+    width: 100%;
+    border-radius: unset;
+    padding: unset;
+    margin: unset;
+    background-color: unset;
+    padding-top: 30px;
+  }
 
-}
+  .hotelcard {
+    width: 85%;
+  }
+
+  #activites {
+    margin: unset;
+    padding-top: 40px;
+  }
+
+  #ancreactivites {
+    margin-left: 15px;
+  }
+
+  .cards {
+    width: 85%;
+    margin: auto;
+    padding-top: 35px;
+  }
+
+  .activitecard_s {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  .activitecard_s h3 {
+    padding-top: 5px;
+  }
+
+  .imgcard_as {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: 0 -11px;
+  }
+
+  .activite_d {
+    width: 100%;
+    justify-content: unset;
+  }
+
+  #pomegues {
+    margin-bottom:30px;
+    height: 200px;
+  }
+
+  #img_pomegues {
+    height: 140px;
+    object-position: 0 -140px;
+  }
+
+  #frioul {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  #img_frioul {
+    height: 140px;
+    object-position: 0 -5px;
+  }
+
+  #notredame {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  #img_notredame {
+    height: 140px;
+    object-position: 0 -2px;
+  }
+
+  #longchamp {
+    height: 200px;
+    margin-bottom: 30px;   
+  }
+
+  #img_longchamp {
+    height: 140px;
+    object-position: 0 -18px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: unset;
+    width: 100%;
+  }
+
+  .foot {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+}  
