@@ -663,3 +663,105 @@ footer a {
   }
 
 }  
+
+/* tablette */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  #logo {
+    padding-top: unset;
+  }
+
+  #navsinscrire {
+    order: unset;
+    padding-bottom: 20px;
+  }
+
+  nav {
+    flex-direction: row;
+    margin-top: unset;
+  }
+
+  .searchbtn i {
+    margin: unset;
+    margin-left: -75px;
+  }
+
+  .searchbtn {
+    width: 110px;
+  }
+
+  .searchbtn span {
+    margin-left:30px;
+  }
+
+  #container {
+    padding-top: 50px;
+  }
+
+  #info {
+    margin-bottom: 10px;
+  }
+
+  #sectionhebergements h3 {
+    margin-top: 3px;
+  }
+
+  .hotelcard {
+    width: 40%;
+  }
+
+  .hotelcard_p {
+    width: 75%;
+    height: 150px;
+  }
+
+  .cards { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .activitecard_s {
+    width: 70%;
+    height: 280px;
+  }
+
+  .imgcard_as {
+    height: 220px;
+  }
+
+  .activite_d {
+    width: 70%;
+    height: unset;
+  }
+
+  #pomegues, #frioul, #notredame, #longchamp {    
+    height: 280px;
+  }
+
+  #img_pomegues, #img_frioul, #img_notredame, #img_longchamp {
+    height: 220px;
+  }
+
+  #img_pomegues {
+    object-position: 0 -170px;
+  }
+
+  #img_frioul {
+    object-position: 0, 0;
+  }
+
+  #img_longchamp {
+    object-position: 0 -7px;
+  }
+
+  .foot {
+    width: 30%;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+}
