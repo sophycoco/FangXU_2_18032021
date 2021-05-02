@@ -91,7 +91,6 @@ ul {
 
 #filtersection p {
   margin-top: 5px;
-  margin-bottom: 20px;
 }
 
 #filtersection label {
@@ -102,19 +101,20 @@ ul {
 .locationicon {
   background-color: #f2f2f2;
   border-radius: 12px 0 0 12px;
-  width: 35px;
-  height: 30px;
+  width: 40px;
+  /* height: 30px; */
   text-align: center;
   padding-top: 10px;
 }
 
 .searchlocation {
   display: flex;
+  padding-top: 15px;
 }
 
 #location {
   height: 40px;
-  width: 160px;
+  width: 230px;
   border: 1px solid #f2f2f2;
 }
 
@@ -125,7 +125,7 @@ ul {
   height: 40px;
   width: 110px;
   border-radius: 0 12px 12px 0;
-  margin-left: -5px;
+  margin-left: -10px;
 }
 
 .searchbtn i {
@@ -143,10 +143,6 @@ ul {
   margin-top: 8px;
 }
 
-#filtersection p {
-  margin-top: 24px;
-}
-
 #btncontainer {
   display: flex;
   margin-left: 30px;
@@ -158,7 +154,7 @@ ul {
 
 .btn {
   height: 35px;
-  border-radius: 20px;
+  /* border-radius: 25px; */
   background-color: white;
   outline: #f2f2f2;
   display: flex;
@@ -167,10 +163,10 @@ ul {
 
 .btn i {
   background-color: #deebff;
-  width: 40px;
+  width: 42px;
   height: 28px;
   color: #0065fc;
-  border-radius: 20px;
+  border-radius: 25px;
   text-align: center;
   padding-top: 12px;
 }
@@ -178,8 +174,8 @@ ul {
 .btn p {
   border: 2.5px solid #f2f2f2;
   width: max-content;
-  border-radius: 20px;
-  margin-left: -40px;
+  border-radius: 25px;
+  margin-left: -43px;
   padding: 10px 15px 10px 50px;
   align-self: center;
   font-weight: bold;
@@ -202,6 +198,8 @@ ul {
 #info {
   display: flex;
   margin-left: 15px;
+  padding-top: -25px;
+  padding-bottom: 20px;
 }
 
 #info i {
@@ -520,7 +518,7 @@ footer a {
     height: 40px;
     width: 45px;
     border-radius: 12px;
-    margin-left: -4px;
+    margin-left: -10px;
   }
 
   .searchbtn i {
@@ -543,7 +541,7 @@ footer a {
   }
 
   #btncontainer {
-    width: 110%;
+    width: 100%;
     flex-wrap: wrap;
     margin-left: unset;
     margin-top: 20px;
