@@ -205,7 +205,7 @@ ul {
 #info i {
   color: #0065fc;
   border: 2px solid #f2f2f2;
-  width: 20px;
+  width: 24px;
   height: 20px;
   text-align: center;
   padding: 4px 2px 0 2px;
@@ -462,7 +462,6 @@ footer {
   background-color: #f2f2f2;
   padding-top: 25px;
   padding-left: 25px;
-  padding-right: 500px;
   justify-content: space-between;
 }
 
@@ -480,7 +479,7 @@ footer a {
 }
 
 /* mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   #blockpage {
     width: auto;
@@ -493,12 +492,16 @@ footer a {
   nav {
     flex-direction: column;
     margin-top: -25px;
+    margin-right: unset;
+    width: 100%;
   }
 
   nav li {
-    margin-right: 80px;
-    padding-bottom: 20px;
+    padding-right: 80px;
+    padding-left: 45px;
+    padding-bottom: 15px;
     border-bottom: 2px solid #f2f2f2;
+    margin-right: unset;
   }
 
   nav li:hover {
@@ -509,6 +512,7 @@ footer a {
 
   #navsinscrire {
     order: -1;
+    padding-right: 20px;
   }
 
   .searchbtn {
@@ -549,6 +553,10 @@ footer a {
 
   #container {
     padding-top: 175px;
+  }
+
+  #container p {
+    padding-right: 15px;
   }
 
   #heberge_pop {
@@ -661,7 +669,6 @@ footer a {
   footer {
     flex-direction: column;
     height: unset;
-    width: 100%;
   }
 
   .foot {
@@ -672,7 +679,7 @@ footer a {
 }  
 
 /* tablette */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
   #logo {
     padding-top: unset;
@@ -722,6 +729,10 @@ footer a {
     height: 150px;
   }
 
+  #activites {
+    margin:unset;
+    margin-left: 15px;
+  }
   .cards { 
     display: flex;
     flex-direction: row;
