@@ -87,22 +87,19 @@ ul {
 /* filter section */
 #filtersection {
   margin: 15px;
+  height: 150px;
+  position: relative;
+  padding-bottom: 20px;
 }
 
 #filtersection p {
   margin-top: 5px;
 }
 
-#filtersection label {
-  background-color: #f2f2f2;
-  border-radius: 12px 0 0 12px;
-}
-
 .locationicon {
   background-color: #f2f2f2;
   border-radius: 12px 0 0 12px;
   width: 40px;
-  /* height: 30px; */
   text-align: center;
   padding-top: 10px;
 }
@@ -125,13 +122,11 @@ ul {
   height: 40px;
   width: 110px;
   border-radius: 0 12px 12px 0;
-  margin-left: -10px;
 }
 
 .searchbtn i {
   color: #0065fc;
   width: 0;
-  z-index: -2;
 }
 
 #filters {
@@ -154,7 +149,6 @@ ul {
 
 .btn {
   height: 35px;
-  /* border-radius: 25px; */
   background-color: white;
   outline: #f2f2f2;
   display: flex;
@@ -179,13 +173,6 @@ ul {
   padding: 10px 15px 10px 50px;
   align-self: center;
   font-weight: bold;
-}
-
-#filtersection {
-  margin-top: 20px;
-  height: 150px;
-  position: relative;
-  padding-bottom: 20px;
 }
 
 /* div container */
@@ -225,6 +212,27 @@ ul {
 #heberge_pop {
   display: flex;
   justify-content: space-between;
+}
+
+#sectionhebergements {
+  background-color: #f2f2f2;
+  border-radius: 18px;
+  width: 67%;
+  margin: 15px;
+  padding: 40px 20px 25px 20px;
+}
+
+#sectionhebergements h2 {
+  margin-left: 18px;
+}
+
+#sectionhebergements h3 {
+  margin-top: 12px;
+}
+
+#sectionhebergements p {
+  margin-top: 4px;
+  margin-left: 13px;
 }
 
 .hebergements {
@@ -271,27 +279,6 @@ ul {
   border-radius: 18px 0 0 18px;
 }
 
-#sectionhebergements {
-  background-color: #f2f2f2;
-  border-radius: 18px;
-  width: 67%;
-  margin: 15px;
-  padding: 40px 20px 25px 20px;
-}
-
-#sectionhebergements h2 {
-  margin-left: 18px;
-}
-
-#sectionhebergements h3 {
-  margin-top: 12px;
-}
-
-#sectionhebergements p {
-  margin-top: 4px;
-  margin-left: 13px;
-}
-
 .stars {
   display: flex;
   margin-top: 1px;
@@ -322,13 +309,23 @@ ul {
   margin: 15px;
 }
 
+#sectionpopulaires h2 {
+  margin-left: 18px;
+}
+
+#sectionpopulaires p {
+  margin-top: 8px;
+  margin-left: 13px;
+}
+
+#title {
+  display: flex;
+  justify-content: space-between;
+}
+
 #title i {
   margin-top: 10px;
   margin-right: 25px;
-}
-
-#sectionpopulaires h2 {
-  margin-left: 18px;
 }
 
 #cardspopulaires {
@@ -340,16 +337,6 @@ ul {
   font-weight: bold;
   margin-top: 12px;
   margin-left: 13px;
-}
-
-#sectionpopulaires p {
-  margin-top: 8px;
-  margin-left: 13px;
-}
-
-#title {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* section activites */
@@ -380,6 +367,7 @@ ul {
   border-radius: 18px;
   box-shadow: 0px 0px 10px#aeacaf;
 }
+
 .imgcard_as {
   width: 100%;
   height: 390px;
@@ -680,7 +668,7 @@ footer a {
 
 }  
 
-/* tablette */
+/* tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
   header {
@@ -759,12 +747,19 @@ footer a {
     padding-top: 30px;
   }
 
+  #sectionhebergements h3 {
+    margin-top: 3px;
+    padding-left: 13px;
+    margin-left: unset;
+  }
+
   .hotelcard {
-    width: 85%;
+    width: 40%;
   }
 
   .hotelcard_p {
-    width: 85%;
+    width: 65%;
+    height: 150px;
   }
 
   #activites {
@@ -783,98 +778,16 @@ footer a {
     margin-right: unset;
   }
 
-  .activitecard_s {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 30px;
-  }
-
   .imgcard_as {
     width: 100%;
-    height: 140px;
+    height: 420px; 
     object-fit: cover;
-    object-position: -120px 0;
   }
-
-  .activite_d {
-    width: 100%;
-    justify-content: unset;
-  }
-
-  /*
-  #pomegues {
-    margin-bottom:30px;
-    height: 200px;
-  }
-
-  #img_pomegues {
-    height: 140px;
-    object-position: 0 -140px;
-  }
-
-  #frioul {
-    height: 200px;
-    margin-bottom: 30px;
-  }
-
-  #img_frioul {
-    height: 140px;
-    object-position: 0 -5px;
-  }
-
-  #notredame {
-    height: 200px;
-    margin-bottom: 30px;
-  }
-
-  #img_notredame {
-    height: 140px;
-    object-position: 0 -2px;
-  }
-
-  #longchamp {
-    height: 200px;
-    margin-bottom: 30px;   
-  }
-
-  #img_longchamp {
-    height: 140px;
-    object-position: 0 -18px;
-  } */
-
-  #sectionhebergements h3 {
-    margin-top: 3px;
-    padding-left: 13px;
-    margin-left: unset;
-  }
-
-  .hotelcard {
-    width: 40%;
-  }
-
-  .hotelcard_p {
-    width: 65%;
-    height: 150px;
-  }
-
-  #activites {
-    margin:unset;
-  }
-
-  /*
-  .cards { 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
 
   .activitecard_s {
     width: 45%;
     height: 480px;
-  }
-
-  .imgcard_as {
-    height: 420px;
+    margin-bottom: 30px;
   }
 
   .activite_d {
