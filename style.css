@@ -185,14 +185,13 @@ ul {
 #info {
   display: flex;
   margin-left: 15px;
-  padding-top: -25px;
   padding-bottom: 20px;
 }
 
 #info i {
   color: #0065fc;
   border: 2px solid #f2f2f2;
-  width: 24px;
+  width: 20px;
   height: 20px;
   text-align: center;
   padding: 4px 2px 0 2px;
@@ -342,8 +341,11 @@ ul {
 /* section activites */
 #activites {
   width: 100%;
-  margin: 15px;
   padding-top: 20px;
+}
+
+#activites h2 {
+  margin-left: 15px;
 }
 
 #activites h3 {
@@ -356,9 +358,7 @@ ul {
   width: auto;
   position: relative;
   justify-content: space-between;
-  margin-right: 30px;
-  margin-top: 30px;
-  margin-bottom: 55px;
+  margin: 30px 15px 55px 15px;
 }
 
 .activitecard_s {
@@ -761,6 +761,11 @@ footer a {
 
   .hotelcard {
     width: 40%;
+    height: 210px;
+  }
+
+  .imgcard_h {
+    height: 130px;
   }
 
   .hotelcard_p {
@@ -782,6 +787,7 @@ footer a {
     justify-content: space-around;
     margin-bottom: unset;
     margin-right: unset;
+    margin-left: 0;
   }
 
   .imgcard_as {
